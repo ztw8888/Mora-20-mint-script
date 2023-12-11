@@ -11,8 +11,17 @@
 
 3. 在 `main.rs` 文件自定义铭文信息
 ```rust
-
+    const MORA_CANISTER_ID: &str = "erpbi-cyaaa-aaaan-qdccq-cai"; // 修改为你自己的 Mora 星球 Canister Id
+    const MINT_TITLE: &str = "NNSDAO"; // 修改为你要打铭文要求的文章 Title
+    // 修改为你要打铭文要求的 Mint 命令
+    const MINT_CONTENT: &str = "{\"p\": \"mora-20\", \"op\": \"mint\", \"tick\": \"nnsdao\", \"amt\": \"1000\"}";
+    const MINT_AMOUNT: usize = 10; // 修改为你需要批量打的张数
 ```
+
+4. 运行脚本 
+```rust 
+    cargo run --release
+````
 
 运行效果 :
 
